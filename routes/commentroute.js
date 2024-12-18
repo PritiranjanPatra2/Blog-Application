@@ -1,6 +1,6 @@
 import express from 'express';
-import Comment from '../model/CommentModel.js';
 import validateToken from '../middlewares/validateToken.js';
+import Comment from '../model/CommentModel.js';
 const commentRoute = express.Router();
 
 commentRoute.get('/', async(req, res) => {
