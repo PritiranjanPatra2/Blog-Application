@@ -59,7 +59,7 @@ https://blog-application-taz1.onrender.com
 
 ## Post Endpoints
 
-### **1. GET /posts**
+### **1. GET /api/posts**
 **Purpose**: Retrieve all posts.
 
 #### Response
@@ -67,7 +67,7 @@ https://blog-application-taz1.onrender.com
 
 ---
 
-### **2. POST /posts**
+### **2. POST /api/posts**
 **Purpose**: Create a new post.
 
 #### Headers
@@ -88,7 +88,7 @@ https://blog-application-taz1.onrender.com
 
 ---
 
-### **3. GET /posts/:id**
+### **3. GET /api/posts/:id**
 **Purpose**: Retrieve a single post by ID.
 
 #### Response
@@ -97,7 +97,7 @@ https://blog-application-taz1.onrender.com
 
 ---
 
-### **4. PUT /posts/:id**
+### **4. PUT /api/posts/:id**
 **Purpose**: Update a post by ID.
 
 #### Headers
@@ -119,7 +119,7 @@ https://blog-application-taz1.onrender.com
 
 ---
 
-### **5. DELETE /posts/:id**
+### **5. DELETE /api/posts/:id**
 **Purpose**: Delete a post by ID.
 
 #### Headers
@@ -134,7 +134,7 @@ https://blog-application-taz1.onrender.com
 
 ## Comment Endpoints
 
-### **1. GET /comments**
+### **1. GET /api/comments**
 **Purpose**: Retrieve all comments.
 
 #### Response
@@ -142,7 +142,7 @@ https://blog-application-taz1.onrender.com
 
 ---
 
-### **2. POST /comments**
+### **2. POST /api/comments**
 **Purpose**: Create a new comment for a specific post.
 
 #### Headers
@@ -163,7 +163,7 @@ https://blog-application-taz1.onrender.com
 
 ---
 
-### **3. PUT /comments/:id**
+### **3. PUT /api/comments/:id**
 **Purpose**: Update a comment by ID.
 
 #### Headers
@@ -184,7 +184,7 @@ https://blog-application-taz1.onrender.com
 
 ---
 
-### **4. DELETE /comments/:id**
+### **4. DELETE /api/comments/:id**
 **Purpose**: Delete a comment by ID.
 
 #### Headers
@@ -207,7 +207,9 @@ All endpoints return appropriate HTTP status codes and error messages in case of
 ---
 
 ## Environment Variables
-Ensure the following environment variable is set:
+Ensure the following environment variables are set:
+- `PORT`: The port on which the server runs.
+- `URL`: MongoDB connection string.
 - `JWT_PRIVATE`: The secret key for JWT token generation.
 
 ---
@@ -228,6 +230,8 @@ Ensure the following environment variable is set:
    ```
 3. Set up environment variables in a `.env` file:
    ```env
+   PORT=4949
+   URL=your_mongodb_connection_string
    JWT_PRIVATE=your_secret_key
    ```
 4. Start the server:
