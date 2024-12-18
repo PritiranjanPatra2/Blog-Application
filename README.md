@@ -62,6 +62,8 @@ https://blog-application-taz1.onrender.com
 ### **1. GET /api/posts**
 **Purpose**: Retrieve all posts.
 
+**URL**: [https://blog-application-taz1.onrender.com/api/posts](https://blog-application-taz1.onrender.com/api/posts)
+
 #### Response
 - **200**: Array of posts.
 
@@ -69,6 +71,8 @@ https://blog-application-taz1.onrender.com
 
 ### **2. POST /api/posts**
 **Purpose**: Create a new post.
+
+**URL**: [https://blog-application-taz1.onrender.com/api/posts](https://blog-application-taz1.onrender.com/api/posts)
 
 #### Headers
 - Requires JWT token.
@@ -91,6 +95,8 @@ https://blog-application-taz1.onrender.com
 ### **3. GET /api/posts/:id**
 **Purpose**: Retrieve a single post by ID.
 
+**URL**: [https://blog-application-taz1.onrender.com/api/posts/:id](https://blog-application-taz1.onrender.com/api/posts/:id)
+
 #### Response
 - **200**: Post details.
 - **404**: Post not found.
@@ -99,6 +105,8 @@ https://blog-application-taz1.onrender.com
 
 ### **4. PUT /api/posts/:id**
 **Purpose**: Update a post by ID.
+
+**URL**: [https://blog-application-taz1.onrender.com/api/posts/:id](https://blog-application-taz1.onrender.com/api/posts/:id)
 
 #### Headers
 - Requires JWT token.
@@ -122,6 +130,8 @@ https://blog-application-taz1.onrender.com
 ### **5. DELETE /api/posts/:id**
 **Purpose**: Delete a post by ID.
 
+**URL**: [https://blog-application-taz1.onrender.com/api/posts/:id](https://blog-application-taz1.onrender.com/api/posts/:id)
+
 #### Headers
 - Requires JWT token.
 
@@ -137,6 +147,8 @@ https://blog-application-taz1.onrender.com
 ### **1. GET /api/comments**
 **Purpose**: Retrieve all comments.
 
+**URL**: [https://blog-application-taz1.onrender.com/api/comments](https://blog-application-taz1.onrender.com/api/comments)
+
 #### Response
 - **200**: Array of comments.
 
@@ -144,6 +156,8 @@ https://blog-application-taz1.onrender.com
 
 ### **2. POST /api/comments**
 **Purpose**: Create a new comment for a specific post.
+
+**URL**: [https://blog-application-taz1.onrender.com/api/comments](https://blog-application-taz1.onrender.com/api/comments)
 
 #### Headers
 - Requires JWT token.
@@ -166,6 +180,8 @@ https://blog-application-taz1.onrender.com
 ### **3. PUT /api/comments/:id**
 **Purpose**: Update a comment by ID.
 
+**URL**: [https://blog-application-taz1.onrender.com/api/comments/:id](https://blog-application-taz1.onrender.com/api/comments/:id)
+
 #### Headers
 - Requires JWT token.
 
@@ -186,6 +202,8 @@ https://blog-application-taz1.onrender.com
 
 ### **4. DELETE /api/comments/:id**
 **Purpose**: Delete a comment by ID.
+
+**URL**: [https://blog-application-taz1.onrender.com/api/comments/:id](https://blog-application-taz1.onrender.com/api/comments/:id)
 
 #### Headers
 - Requires JWT token.
